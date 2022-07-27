@@ -127,3 +127,8 @@ int main()
     }
     return 0;
 }
+
+// one important note: when considering grids, view it rotated
+// i.e cartesian y axis becomes x axis (corresponds to i)
+// and cartesina x axis becomes y axis (corresponds to j)
+// this will help to prevent confusionx
