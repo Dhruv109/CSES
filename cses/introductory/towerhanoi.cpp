@@ -16,7 +16,7 @@ void solve(int n, int from, int to, int via)
     // to do this we first transfer n-1 discs from 1 to 2 via 3
 
     solve(n - 1, from, via, to);
-    cout << from << " " << to << endl;
+    cout << from << " " << to << endl; 
     // now we transfer the nth disc from 1 to 3
     // now we transfer n-1 discs from 2 to 3 via 1
     solve(n - 1, via, to, from);

@@ -10,10 +10,10 @@ int main()
 {
     int n;
     cin >> n;
-    for (i = 0; i < (1 << n); ++i)
+    for (i = 0; i < (1 << n); ++i) // giving all 2^n combinations
     {
         ll g = i ^ (i >> 1); // xoring the number with itself shifted once to right
-        bitset<16> x(g);
+        bitset<16> x(g);     // converting int to bits
         for (j = 0; j < n; ++j)
             cout << x[j];
         cout << endl;
